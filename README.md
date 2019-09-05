@@ -8,7 +8,7 @@ mvn clean package
 
 **Docker Image bauen**
 
-docker build -f "./src/main/docker/Dockerfile" -t docker.nexus.archi-lab.io/archilab/fae-shop-demo .
+docker build -f "./src/main/docker/Dockerfile-dev" -t docker.nexus.archi-lab.io/archilab/fae-shop-demo .
 
 **Shop Demo Netzwerk erstellen**
 

@@ -1,0 +1,29 @@
+# Spring
+spring:
+  application:
+    name: shop-demo-ms
+  profiles:
+    active: local
+  # Hibernate ddl auto
+  jpa:
+    hibernate:
+      ddl-auto: update
+  # Spring Data Rest
+  data:
+    rest:
+      return-body-on-create: true
+      return-body-on-update: true
+      default-media-type: application/hal+json
+  # JSON Pretty Print
+  jackson:
+    serialization:
+      indent-output: true
+    deserialization:
+      accept-empty-array-as-null-object: true
+# Server
+server:
+  port: 8080
+  compression.enabled: true
+  compression.mime-types: application/json,application/xml,text/html,text/xml,text/plain
+# Kafka-topic
+product.topic: product
