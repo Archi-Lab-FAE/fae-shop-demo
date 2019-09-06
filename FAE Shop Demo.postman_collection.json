@@ -22,12 +22,13 @@
 					"raw": "{\n\t\"name\": \"Tisch\",\n\t\"description\": \"Tisch mit 2 Beinen\",\n\t\"price\": 300\n}"
 				},
 				"url": {
-					"raw": "localhost:8080/products",
+					"raw": "localhost:8080/shop-demo/products",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
+						"shop-demo",
 						"products"
 					]
 				}
@@ -96,12 +97,13 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "localhost:8080/level-2/products",
+					"raw": "localhost:8080/shop-demo/level-2/products",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
+						"shop-demo",
 						"level-2",
 						"products"
 					]
@@ -173,12 +175,13 @@
 					"raw": "{\n\t\"name\": \"Tischlieferung\"\n}"
 				},
 				"url": {
-					"raw": "localhost:8080/orders",
+					"raw": "localhost:8080/shop-demo/orders",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
+						"shop-demo",
 						"orders"
 					]
 				}
@@ -273,7 +276,19 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": ""
+					"raw": "http://localhost:8080/shop-demo/level-2/orders/1ab01b3b-169f-42d7-90f0-2c1338f5ed2d/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"shop-demo",
+						"level-2",
+						"orders",
+						"1ab01b3b-169f-42d7-90f0-2c1338f5ed2d",
+						"products"
+					]
 				}
 			},
 			"response": []
@@ -288,13 +303,14 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:8080/orders/1ab01b3b-169f-42d7-90f0-2c1338f5ed2d/products/1a605cef-f63e-4db8-82d4-f2f3e0aa8894",
+					"raw": "http://localhost:8080/shop-demo/orders/1ab01b3b-169f-42d7-90f0-2c1338f5ed2d/products/1a605cef-f63e-4db8-82d4-f2f3e0aa8894",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
+						"shop-demo",
 						"orders",
 						"1ab01b3b-169f-42d7-90f0-2c1338f5ed2d",
 						"products",

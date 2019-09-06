@@ -23,12 +23,22 @@ public class OrderController {
   @Autowired
   private OrderRepository orderRepository;
 
-  @GetMapping("/level-2/orders")
+  @GetMapping("/shop-demo/level-2/orders")
   public Iterable<Order> orders() {
     return orderRepository.findAll();
   }
 
-  @GetMapping("/level-2/orders/{id}/products")
+  @PostMapping("/shop-demo/level-2/orders")
+  public Order newOrder(@RequestBody Order newOrder) {
+    return orderRepository.save(newOrder);
+  }
+
+  @DeleteMapping("/shop-demo/level-2/orders/{id}")
+  public void deleteOrder(@PathVariable UUID id) {
+    orderRepository.deleteById(id);
+  }
+
+  @GetMapping("/shop-demo/level-2/orders/{id}/products")
   public Iterable<Product> orderProducts(@PathVariable UUID id) {
     Optional<Order> order = orderRepository.findById(id);
     if (order.isPresent()) {
@@ -38,13 +48,5 @@ public class OrderController {
     }
   }
 
-  @PostMapping("/level-2/orders")
-  public Order newOrder(@RequestBody Order newOrder) {
-    return orderRepository.save(newOrder);
-  }
-
-  @DeleteMapping("/level-2/orders/{id}")
-  public void deleteOrder(@PathVariable UUID id) {
-    orderRepository.deleteById(id);
-  }
+  // TODO add product to order
 }

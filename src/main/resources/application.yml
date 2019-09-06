@@ -11,6 +11,7 @@ spring:
   # Spring Data Rest
   data:
     rest:
+      basePath: /shop-demo
       return-body-on-create: true
       return-body-on-update: true
       default-media-type: application/hal+json
@@ -20,6 +21,8 @@ spring:
       indent-output: true
     deserialization:
       accept-empty-array-as-null-object: true
+  kafka:
+    group-id: "shop-demo"
 # Server
 server:
   port: 8080

@@ -24,10 +24,10 @@ services:
       - postgres
     networks:
       - service_internal
-      - shop_demo_backend
+      - fae_backend
 volumes:
   shop_demo_db: {}
 networks:
   service_internal:
-  shop_demo_backend:
+  fae_backend:
     external: true

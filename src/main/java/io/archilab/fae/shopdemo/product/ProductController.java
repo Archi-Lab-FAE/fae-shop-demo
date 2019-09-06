@@ -16,17 +16,17 @@ public class ProductController {
   @Autowired
   private ProductRepository productRepository;
 
-  @GetMapping("/level-2/products")
+  @GetMapping("/shop-demo/level-2/products")
   public Iterable<Product> products() {
     return productRepository.findAll();
   }
 
-  @PostMapping("/level-2/products")
+  @PostMapping("/shop-demo/level-2/products")
   public Product newProduct(@RequestBody Product newProduct) {
     return productRepository.save(newProduct);
   }
 
-  @DeleteMapping("/level-2/products/{id}")
+  @DeleteMapping("/shop-demo/level-2/products/{id}")
   public void deleteProduct(@PathVariable UUID id) {
     productRepository.deleteById(id);
   }

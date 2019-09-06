@@ -1,6 +1,7 @@
 package io.archilab.fae.shopdemo.product;
 
 import javax.persistence.Entity;
+import javax.persistence.EntityListeners;
 
 import com.fasterxml.jackson.annotation.JsonUnwrapped;
 
@@ -13,6 +14,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 @Entity
+@EntityListeners(ProductEventHandler.class)
 @Getter
 @ToString(callSuper = true)
 @NoArgsConstructor(access = AccessLevel.PROTECTED)

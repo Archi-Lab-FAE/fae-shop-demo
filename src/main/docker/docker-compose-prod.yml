@@ -26,11 +26,11 @@ services:
         max_attempts: 3
         window: 120s
     networks:
-      - shop_demo_backend
+      - fae_backend
     logging:
       driver: gelf
       options:
         gelf-address: "udp://127.0.0.1:12201"
 networks:
-  shop_demo_backend:
+  fae_backend:
     external: true

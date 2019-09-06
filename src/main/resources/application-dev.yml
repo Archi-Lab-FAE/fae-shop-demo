@@ -4,9 +4,6 @@ spring:
     url: jdbc:postgresql://${SHOP_DEMO_DB}:5432/${SHOP_DEMO_DB_NAME}
     password: ${SHOP_DEMO_DB_PW}
     username: ${SHOP_DEMO_DB_USER}
-  # kafka servers
-  kafka:
-    bootstrap-servers: kafka:9092
 
 # Eureka
 eureka:
