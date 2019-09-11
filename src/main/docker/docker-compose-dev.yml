@@ -1,7 +1,11 @@
 version: '3.4'
 
+
 services:
   springboot-service:
-    image: docker.nexus.archi-lab.io/archilab/fae-shop-demo-dev
+    image: docker.nexus.archi-lab.io/archilab/shop-demo
+    environment:
+      - TZ=Europe/Berlin
+      - SPRING_PROFILES_ACTIVE=dev
     ports:
       - "8081:8080"

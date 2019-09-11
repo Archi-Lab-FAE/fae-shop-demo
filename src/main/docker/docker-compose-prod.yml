@@ -2,10 +2,6 @@ version: '3.4'
 
 services:
   postgres:
-    logging:
-      driver: gelf
-      options:
-        gelf-address: "udp://127.0.0.1:12201"
     deploy:
       restart_policy:
         condition: any
@@ -13,7 +9,7 @@ services:
         max_attempts: 3
         window: 120s
   springboot-service:
-    image: docker.nexus.archi-lab.io/archilab/fae-shop-demo:${BUILD_ID}
+    image: docker.nexus.archi-lab.io/archilab/shop-demo:${TAG}
     deploy:
       replicas: 2
       update_config:
@@ -25,12 +21,6 @@ services:
         delay: 5s
         max_attempts: 3
         window: 120s
-    networks:
-      - fae_backend
-    logging:
-      driver: gelf
-      options:
-        gelf-address: "udp://127.0.0.1:12201"
-networks:
-  fae_backend:
-    external: true
+    environment:
+      - TZ=Europe/Berlin
+      - SPRING_PROFILES_ACTIVE=prod

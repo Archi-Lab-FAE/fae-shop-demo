@@ -6,20 +6,20 @@ services:
     volumes:
       - shop_demo_db:/var/lib/postgresql/data
     environment:
-      - POSTGRES_PASSWORD=ShopDemo
+      - POSTGRES_PASSWORD=_FAE_DeMO_MS_2019
       - POSTGRES_USER=shop_demo
       - POSTGRES_DB=shop_demo
       - PGDATA=/var/lib/postgresql/data/pgdata
     networks:
       - service_internal
   springboot-service:
-    image: docker.nexus.archi-lab.io/archilab/fae-shop-demo
+    image: docker.nexus.archi-lab.io/archilab/shop-demo
     environment:
       - TZ=Europe/Berlin
       - SHOP_DEMO_DB=postgres
       - SHOP_DEMO_DB_NAME=shop_demo
       - SHOP_DEMO_DB_USER=shop_demo
-      - SHOP_DEMO_DB_PW=ShopDemo
+      - SHOP_DEMO_DB_PW=_FAE_DeMO_MS_2019
     depends_on:
       - postgres
     networks:
