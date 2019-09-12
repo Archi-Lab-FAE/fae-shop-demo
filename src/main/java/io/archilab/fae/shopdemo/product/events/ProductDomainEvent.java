@@ -1,4 +1,4 @@
-package io.archilab.fae.shopdemo.product;
+package io.archilab.fae.shopdemo.product.events;
 
 
 import java.util.UUID;

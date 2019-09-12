@@ -1,4 +1,4 @@
-package io.archilab.fae.shopdemo.product;
+package io.archilab.fae.shopdemo.product.events;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -11,6 +11,7 @@ import javax.persistence.PostUpdate;
 import com.fasterxml.jackson.core.JsonProcessingException;
 
 import io.archilab.fae.shopdemo.kafka.KafkaMessageProducer;
+import io.archilab.fae.shopdemo.product.Product;
 
 
 @Component

@@ -6,6 +6,7 @@ import javax.persistence.EntityListeners;
 import com.fasterxml.jackson.annotation.JsonUnwrapped;
 
 import io.archilab.fae.shopdemo.core.AbstractEntity;
+import io.archilab.fae.shopdemo.product.events.ProductEventHandler;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
