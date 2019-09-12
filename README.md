@@ -8,16 +8,16 @@ mvn clean package
 
 **Docker Image bauen**
 
-docker build -f "./src/main/docker/Dockerfile-dev" -t docker.nexus.archi-lab.io/archilab/fae-shop-demo .
+docker build -f "./Dockerfile" -t docker.nexus.archi-lab.io/archilab/shop-demo .
 
 **Shop Demo Netzwerk erstellen**
 
-docker create network shop_demo_backend
+docker create network fae_backend
 
 **Applikation mitsamt Datenbank starten**
 
-docker-compose -f "./src/main/docker/docker-compose.yml" up
+./start-service-dev.sh
 
 **Applikation mitsamt Datenbank stoppen**
 
-docker-compose -f "./src/main/docker/docker-compose.yml" down
+./stop-service-dev.sh
