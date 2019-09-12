@@ -6,6 +6,10 @@ spring:
   # kafka servers
   kafka:
     bootstrap-servers: kafka-1:9092,kafka-2:9092,kafka-3:9092
+# CORS
+security:
+  cors:
+    allowed-origins: "https://www.fae.archi-lab.io, https://www.fae.archi-lab.de, https://fae.archi-lab.io, https://fae.archi-lab.de"
 # Eureka
 eureka:
   client:

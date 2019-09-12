@@ -23,6 +23,13 @@ spring:
       accept-empty-array-as-null-object: true
   kafka:
     group-id: "shop-demo"
+
+# CORS
+security:
+  cors:
+    allowed-origins: '*'
+    allowed-headers: '*'
+    allowed-methods: '*'
 # Server
 server:
   port: 8080
