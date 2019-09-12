@@ -22,11 +22,14 @@
 					"raw": "{\n\t\"name\": \"Tisch\",\n\t\"description\": \"Tisch mit 2 Beinen\",\n\t\"price\": 300\n}"
 				},
 				"url": {
-					"raw": "localhost:8080/shop-demo/products",
+					"raw": "https://api.fae.archi-lab.io/shop-demo/products",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"api",
+						"fae",
+						"archi-lab",
+						"io"
 					],
-					"port": "8080",
 					"path": [
 						"shop-demo",
 						"products"
@@ -52,12 +55,16 @@
 					"raw": "{\n\t\"name\": \"Tisch\",\n\t\"description\": \"Tisch mit 2 Beinen\",\n\t\"price\": 200\n}"
 				},
 				"url": {
-					"raw": "localhost:8080/level-2/products",
+					"raw": "https://api.fae.archi-lab.io/shop-demo/level-2/products",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"api",
+						"fae",
+						"archi-lab",
+						"io"
 					],
-					"port": "8080",
 					"path": [
+						"shop-demo",
 						"level-2",
 						"products"
 					]
@@ -75,12 +82,16 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "localhost:8080/products",
+					"raw": "https://api.fae.archi-lab.io/shop-demo/products",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"api",
+						"fae",
+						"archi-lab",
+						"io"
 					],
-					"port": "8080",
 					"path": [
+						"shop-demo",
 						"products"
 					]
 				}
@@ -303,18 +314,46 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:8080/shop-demo/orders/1ab01b3b-169f-42d7-90f0-2c1338f5ed2d/products/1a605cef-f63e-4db8-82d4-f2f3e0aa8894",
-					"protocol": "http",
+					"raw": "https://api.fae.archi-lab.io/shop-demo/orders/1ab01b3b-169f-42d7-90f0-2c1338f5ed2d/products/1a605cef-f63e-4db8-82d4-f2f3e0aa8894",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"api",
+						"fae",
+						"archi-lab",
+						"io"
 					],
-					"port": "8080",
 					"path": [
 						"shop-demo",
 						"orders",
 						"1ab01b3b-169f-42d7-90f0-2c1338f5ed2d",
 						"products",
 						"1a605cef-f63e-4db8-82d4-f2f3e0aa8894"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Product Events",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://api.fae.archi-lab.io/shop-demo/productEventInformations",
+					"protocol": "https",
+					"host": [
+						"api",
+						"fae",
+						"archi-lab",
+						"io"
+					],
+					"path": [
+						"shop-demo",
+						"productEventInformations"
 					]
 				}
 			},
