@@ -12,7 +12,7 @@ docker build -f "./Dockerfile" -t docker.nexus.archi-lab.io/archilab/shop-demo .
 
 **Create docker network**
 
-docker create network fae_backend
+docker network create fae_backend
 
 **Start application with database**
 
