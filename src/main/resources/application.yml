@@ -6,8 +6,15 @@ spring:
     active: local
   # Hibernate ddl auto
   jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: update
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+
   # Spring Data Rest
   data:
     rest:
