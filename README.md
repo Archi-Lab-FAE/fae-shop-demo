@@ -1,23 +1,24 @@
 # Fae Shop Demo
-## In Docker-Umgebung ausführen
-Folgende Kommandos sollten im Root-Verzeichnis der Applikation ausgeführt werden:
+## Run in Docker-Environment
+The following commands should be executed in the root directory of the application:
 
-**Ausführbare .jar Datei bauen**
+**Build runnable .jar**
 
 mvn clean package
 
-**Docker Image bauen**
+**Build Docker Image**
 
 docker build -f "./Dockerfile" -t docker.nexus.archi-lab.io/archilab/shop-demo .
 
-**Shop Demo Netzwerk erstellen**
+**Create docker network**
 
-docker create network fae_backend
+docker network create fae_backend
 
-**Applikation mitsamt Datenbank starten**
+**Start application with database**
 
-./start-service-dev.sh
+docker-compose -f "./src/main/docker/docker-compose.yml" -f "./src/main/docker/docker-compose-dev.yml" up
 
-**Applikation mitsamt Datenbank stoppen**
+**Stop application with database**
 
-./stop-service-dev.sh
+docker-compose -f "./src/main/docker/docker-compose.yml" -f "./src/main/docker/docker-compose-dev.yml" down
+
