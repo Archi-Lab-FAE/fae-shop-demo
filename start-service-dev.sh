@@ -9,7 +9,7 @@ CURRENT="$(
 docker network inspect fae_backend &>/dev/null || docker network create fae_backend
 
 # Start service
-docker-compose -p gateway \
+docker-compose -p shop \
   -f "$CURRENT/src/main/docker/docker-compose.yml" \
   -f "$CURRENT/src/main/docker/docker-compose-dev.yml" \
   up -d
