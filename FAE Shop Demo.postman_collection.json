@@ -1,363 +1,384 @@
 {
-	"info": {
-		"_postman_id": "e02c36fd-a71d-4cab-b445-b63ca754e6f3",
-		"name": "FAE Shop Demo",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-	},
-	"item": [
-		{
-			"name": "Add Product",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n\t\"name\": \"Tisch\",\n\t\"description\": \"Tisch mit 2 Beinen\",\n\t\"price\": 300\n}"
-				},
-				"url": {
-					"raw": "https://api.fae.archi-lab.io/shop-demo/products",
-					"protocol": "https",
-					"host": [
-						"api",
-						"fae",
-						"archi-lab",
-						"io"
-					],
-					"path": [
-						"shop-demo",
-						"products"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Add Product (Level 2)",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n\t\"name\": \"Tisch\",\n\t\"description\": \"Tisch mit 2 Beinen\",\n\t\"price\": 200\n}"
-				},
-				"url": {
-					"raw": "https://api.fae.archi-lab.io/shop-demo/level-2/products",
-					"protocol": "https",
-					"host": [
-						"api",
-						"fae",
-						"archi-lab",
-						"io"
-					],
-					"path": [
-						"shop-demo",
-						"level-2",
-						"products"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Get all Products",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "https://api.fae.archi-lab.io/shop-demo/products",
-					"protocol": "https",
-					"host": [
-						"api",
-						"fae",
-						"archi-lab",
-						"io"
-					],
-					"path": [
-						"shop-demo",
-						"products"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Get all Products (Level 2)",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "localhost:8080/shop-demo/level-2/products",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"shop-demo",
-						"level-2",
-						"products"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Delete Product",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "localhost:8080/products/d592ee94-46d1-4997-a594-f7776bba0c40",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"products",
-						"d592ee94-46d1-4997-a594-f7776bba0c40"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Delete Product (Level 2)",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "localhost:8080/level-2/products/d592ee94-46d1-4997-a594-f7776bba0c40",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"level-2",
-						"products",
-						"d592ee94-46d1-4997-a594-f7776bba0c40"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Add Order",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n\t\"name\": \"Tischlieferung\"\n}"
-				},
-				"url": {
-					"raw": "localhost:8080/shop-demo/orders",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"shop-demo",
-						"orders"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Get all Orders",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "localhost:8080/orders",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"orders"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Add Product to Order",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "text/uri-list",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "http://localhost:8080/products/a444c804-b191-4bba-bf5d-80967cd57206"
-				},
-				"url": {
-					"raw": "http://localhost:8080/orders/1ab01b3b-169f-42d7-90f0-2c1338f5ed2d/products",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"orders",
-						"1ab01b3b-169f-42d7-90f0-2c1338f5ed2d",
-						"products"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Get all Order Products",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "http://localhost:8080/orders/1ab01b3b-169f-42d7-90f0-2c1338f5ed2d/products",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"orders",
-						"1ab01b3b-169f-42d7-90f0-2c1338f5ed2d",
-						"products"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Get all Order Products (Level 2)",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "http://localhost:8080/shop-demo/level-2/orders/1ab01b3b-169f-42d7-90f0-2c1338f5ed2d/products",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"shop-demo",
-						"level-2",
-						"orders",
-						"1ab01b3b-169f-42d7-90f0-2c1338f5ed2d",
-						"products"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Delete Product from Order",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "https://api.fae.archi-lab.io/shop-demo/orders/1ab01b3b-169f-42d7-90f0-2c1338f5ed2d/products/1a605cef-f63e-4db8-82d4-f2f3e0aa8894",
-					"protocol": "https",
-					"host": [
-						"api",
-						"fae",
-						"archi-lab",
-						"io"
-					],
-					"path": [
-						"shop-demo",
-						"orders",
-						"1ab01b3b-169f-42d7-90f0-2c1338f5ed2d",
-						"products",
-						"1a605cef-f63e-4db8-82d4-f2f3e0aa8894"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Get All Product Events",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "https://api.fae.archi-lab.io/shop-demo/productEventInformations",
-					"protocol": "https",
-					"host": [
-						"api",
-						"fae",
-						"archi-lab",
-						"io"
-					],
-					"path": [
-						"shop-demo",
-						"productEventInformations"
-					]
-				}
-			},
-			"response": []
-		}
-	]
+  "info": {
+    "_postman_id": "e02c36fd-a71d-4cab-b445-b63ca754e6f3",
+    "name": "FAE Shop Demo",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Add Product",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"name\": \"Tisch\",\n\t\"description\": \"Tisch mit 2 Beinen\",\n\t\"price\": 300\n}"
+        },
+        "url": {
+          "raw": "https://api.fae.archi-lab.io/shop-demo/products",
+          "protocol": "https",
+          "host": [
+            "api",
+            "fae",
+            "archi-lab",
+            "io"
+          ],
+          "path": [
+            "shop-demo",
+            "products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Add Product (Level 2)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"name\": \"Tisch\",\n\t\"description\": \"Tisch mit 2 Beinen\",\n\t\"price\": 200\n}"
+        },
+        "url": {
+          "raw": "https://api.fae.archi-lab.io/shop-demo/level-2/products",
+          "protocol": "https",
+          "host": [
+            "api",
+            "fae",
+            "archi-lab",
+            "io"
+          ],
+          "path": [
+            "shop-demo",
+            "level-2",
+            "products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get all Products",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "https://api.fae.archi-lab.io/shop-demo/products",
+          "protocol": "https",
+          "host": [
+            "api",
+            "fae",
+            "archi-lab",
+            "io"
+          ],
+          "path": [
+            "shop-demo",
+            "products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get all Products (Level 2)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "https://api.fae.archi-lab.io/shop-demo/level-2/products",
+          "host": [
+            "api",
+            "fae",
+            "archi-lab",
+            "io"
+          ],
+          "path": [
+            "shop-demo",
+            "level-2",
+            "products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Product",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "https://api.fae.archi-lab.io/shop-demo/products/d592ee94-46d1-4997-a594-f7776bba0c40",
+          "host": [
+            "api",
+            "fae",
+            "archi-lab",
+            "io"
+          ],
+          "path": [
+            "shop-demo",
+            "products",
+            "d592ee94-46d1-4997-a594-f7776bba0c40"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Product (Level 2)",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "https://api.fae.archi-lab.io/shop-demo/level-2/products/d592ee94-46d1-4997-a594-f7776bba0c40",
+          "host": [
+            "api",
+            "fae",
+            "archi-lab",
+            "io"
+          ],
+          "path": [
+            "shop-demo",
+            "level-2",
+            "products",
+            "d592ee94-46d1-4997-a594-f7776bba0c40"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Add Order",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"name\": \"Tischlieferung\"\n}"
+        },
+        "url": {
+          "raw": "https://api.fae.archi-lab.io/shop-demo/orders",
+          "host": [
+            "api",
+            "fae",
+            "archi-lab",
+            "io"
+          ],
+          "path": [
+            "shop-demo",
+            "orders"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get all Orders",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "https://api.fae.archi-lab.io/shop-demo/orders",
+          "host": [
+            "api",
+            "fae",
+            "archi-lab",
+            "io"
+          ],
+          "path": [
+            "shop-demo",
+            "orders"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Add Product to Order",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "text/uri-list",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "https://api.fae.archi-lab.io/shop-demo/products/a444c804-b191-4bba-bf5d-80967cd57206"
+        },
+        "url": {
+          "raw": "https://api.fae.archi-lab.io/shop-demo/orders/1ab01b3b-169f-42d7-90f0-2c1338f5ed2d/products",
+          "protocol": "https",
+          "host": [
+            "api",
+            "fae",
+            "archi-lab",
+            "io"
+          ],
+          "path": [
+            "shop-demo",
+            "orders",
+            "1ab01b3b-169f-42d7-90f0-2c1338f5ed2d",
+            "products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get all Order Products",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "https://api.fae.archi-lab.io/shop-demo/orders/1ab01b3b-169f-42d7-90f0-2c1338f5ed2d/products",
+          "protocol": "https",
+          "host": [
+            "api",
+            "fae",
+            "archi-lab",
+            "io"
+          ],
+          "path": [
+            "shop-demo",
+            "orders",
+            "1ab01b3b-169f-42d7-90f0-2c1338f5ed2d",
+            "products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get all Order Products (Level 2)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "https://api.fae.archi-lab.io/shop-demo/level-2/orders/1ab01b3b-169f-42d7-90f0-2c1338f5ed2d/products",
+          "protocol": "https",
+          "host": [
+            "api",
+            "fae",
+            "archi-lab",
+            "io"
+          ],
+          "path": [
+            "shop-demo",
+            "level-2",
+            "orders",
+            "1ab01b3b-169f-42d7-90f0-2c1338f5ed2d",
+            "products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Product from Order",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "https://api.fae.archi-lab.io/shop-demo/orders/1ab01b3b-169f-42d7-90f0-2c1338f5ed2d/products/1a605cef-f63e-4db8-82d4-f2f3e0aa8894",
+          "protocol": "https",
+          "host": [
+            "api",
+            "fae",
+            "archi-lab",
+            "io"
+          ],
+          "path": [
+            "shop-demo",
+            "orders",
+            "1ab01b3b-169f-42d7-90f0-2c1338f5ed2d",
+            "products",
+            "1a605cef-f63e-4db8-82d4-f2f3e0aa8894"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get All Product Events",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "https://api.fae.archi-lab.io/shop-demo/productEventInformations",
+          "protocol": "https",
+          "host": [
+            "api",
+            "fae",
+            "archi-lab",
+            "io"
+          ],
+          "path": [
+            "shop-demo",
+            "productEventInformations"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
 }
