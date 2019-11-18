@@ -1,5 +1,7 @@
 # Fae Shop Demo
+
 ## Run in Docker-Environment
+
 The following commands should be executed in the root directory of the application:
 
 **Build runnable .jar**
@@ -21,4 +23,3 @@ docker-compose -f "./src/main/docker/docker-compose.yml" -f "./src/main/docker/d
 **Stop application with database**
 
 docker-compose -f "./src/main/docker/docker-compose.yml" -f "./src/main/docker/docker-compose-dev.yml" down
-

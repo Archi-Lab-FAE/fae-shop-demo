@@ -1,4 +1,4 @@
-version: '3.4'
+version: "3.7"
 
 services:
   postgres:
@@ -25,8 +25,10 @@ services:
     networks:
       - service_internal
       - fae_backend
+
 volumes:
   shop_demo_db: {}
+
 networks:
   service_internal:
   fae_backend:

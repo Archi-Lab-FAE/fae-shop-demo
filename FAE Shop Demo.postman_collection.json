@@ -24,16 +24,8 @@
         "url": {
           "raw": "https://api.fae.archi-lab.io/shop-demo/products",
           "protocol": "https",
-          "host": [
-            "api",
-            "fae",
-            "archi-lab",
-            "io"
-          ],
-          "path": [
-            "shop-demo",
-            "products"
-          ]
+          "host": ["api", "fae", "archi-lab", "io"],
+          "path": ["shop-demo", "products"]
         }
       },
       "response": []
@@ -57,17 +49,8 @@
         "url": {
           "raw": "https://api.fae.archi-lab.io/shop-demo/level-2/products",
           "protocol": "https",
-          "host": [
-            "api",
-            "fae",
-            "archi-lab",
-            "io"
-          ],
-          "path": [
-            "shop-demo",
-            "level-2",
-            "products"
-          ]
+          "host": ["api", "fae", "archi-lab", "io"],
+          "path": ["shop-demo", "level-2", "products"]
         }
       },
       "response": []
@@ -84,16 +67,8 @@
         "url": {
           "raw": "https://api.fae.archi-lab.io/shop-demo/products",
           "protocol": "https",
-          "host": [
-            "api",
-            "fae",
-            "archi-lab",
-            "io"
-          ],
-          "path": [
-            "shop-demo",
-            "products"
-          ]
+          "host": ["api", "fae", "archi-lab", "io"],
+          "path": ["shop-demo", "products"]
         }
       },
       "response": []
@@ -109,17 +84,8 @@
         },
         "url": {
           "raw": "https://api.fae.archi-lab.io/shop-demo/level-2/products",
-          "host": [
-            "api",
-            "fae",
-            "archi-lab",
-            "io"
-          ],
-          "path": [
-            "shop-demo",
-            "level-2",
-            "products"
-          ]
+          "host": ["api", "fae", "archi-lab", "io"],
+          "path": ["shop-demo", "level-2", "products"]
         }
       },
       "response": []
@@ -135,12 +101,7 @@
         },
         "url": {
           "raw": "https://api.fae.archi-lab.io/shop-demo/products/d592ee94-46d1-4997-a594-f7776bba0c40",
-          "host": [
-            "api",
-            "fae",
-            "archi-lab",
-            "io"
-          ],
+          "host": ["api", "fae", "archi-lab", "io"],
           "path": [
             "shop-demo",
             "products",
@@ -161,12 +122,7 @@
         },
         "url": {
           "raw": "https://api.fae.archi-lab.io/shop-demo/level-2/products/d592ee94-46d1-4997-a594-f7776bba0c40",
-          "host": [
-            "api",
-            "fae",
-            "archi-lab",
-            "io"
-          ],
+          "host": ["api", "fae", "archi-lab", "io"],
           "path": [
             "shop-demo",
             "level-2",
@@ -195,16 +151,8 @@
         },
         "url": {
           "raw": "https://api.fae.archi-lab.io/shop-demo/orders",
-          "host": [
-            "api",
-            "fae",
-            "archi-lab",
-            "io"
-          ],
-          "path": [
-            "shop-demo",
-            "orders"
-          ]
+          "host": ["api", "fae", "archi-lab", "io"],
+          "path": ["shop-demo", "orders"]
         }
       },
       "response": []
@@ -220,16 +168,8 @@
         },
         "url": {
           "raw": "https://api.fae.archi-lab.io/shop-demo/orders",
-          "host": [
-            "api",
-            "fae",
-            "archi-lab",
-            "io"
-          ],
-          "path": [
-            "shop-demo",
-            "orders"
-          ]
+          "host": ["api", "fae", "archi-lab", "io"],
+          "path": ["shop-demo", "orders"]
         }
       },
       "response": []
@@ -252,12 +192,7 @@
         "url": {
           "raw": "https://api.fae.archi-lab.io/shop-demo/orders/1ab01b3b-169f-42d7-90f0-2c1338f5ed2d/products",
           "protocol": "https",
-          "host": [
-            "api",
-            "fae",
-            "archi-lab",
-            "io"
-          ],
+          "host": ["api", "fae", "archi-lab", "io"],
           "path": [
             "shop-demo",
             "orders",
@@ -280,12 +215,7 @@
         "url": {
           "raw": "https://api.fae.archi-lab.io/shop-demo/orders/1ab01b3b-169f-42d7-90f0-2c1338f5ed2d/products",
           "protocol": "https",
-          "host": [
-            "api",
-            "fae",
-            "archi-lab",
-            "io"
-          ],
+          "host": ["api", "fae", "archi-lab", "io"],
           "path": [
             "shop-demo",
             "orders",
@@ -308,12 +238,7 @@
         "url": {
           "raw": "https://api.fae.archi-lab.io/shop-demo/level-2/orders/1ab01b3b-169f-42d7-90f0-2c1338f5ed2d/products",
           "protocol": "https",
-          "host": [
-            "api",
-            "fae",
-            "archi-lab",
-            "io"
-          ],
+          "host": ["api", "fae", "archi-lab", "io"],
           "path": [
             "shop-demo",
             "level-2",
@@ -337,12 +262,7 @@
         "url": {
           "raw": "https://api.fae.archi-lab.io/shop-demo/orders/1ab01b3b-169f-42d7-90f0-2c1338f5ed2d/products/1a605cef-f63e-4db8-82d4-f2f3e0aa8894",
           "protocol": "https",
-          "host": [
-            "api",
-            "fae",
-            "archi-lab",
-            "io"
-          ],
+          "host": ["api", "fae", "archi-lab", "io"],
           "path": [
             "shop-demo",
             "orders",
@@ -366,16 +286,8 @@
         "url": {
           "raw": "https://api.fae.archi-lab.io/shop-demo/productEventInformations",
           "protocol": "https",
-          "host": [
-            "api",
-            "fae",
-            "archi-lab",
-            "io"
-          ],
-          "path": [
-            "shop-demo",
-            "productEventInformations"
-          ]
+          "host": ["api", "fae", "archi-lab", "io"],
+          "path": ["shop-demo", "productEventInformations"]
         }
       },
       "response": []
