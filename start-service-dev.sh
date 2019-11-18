@@ -11,5 +11,5 @@ docker network inspect fae_backend &>/dev/null || docker network create fae_back
 # Start service
 docker-compose -p shop \
   -f "$CURRENT/src/main/docker/docker-compose.yml" \
-  -f "$CURRENT/src/main/docker/docker-compose-dev.yml" \
+  -f "$CURRENT/src/main/docker/docker-compose.dev.yml" \
   up -d

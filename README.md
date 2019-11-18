@@ -18,8 +18,8 @@ docker network create fae_backend
 
 **Start application with database**
 
-docker-compose -f "./src/main/docker/docker-compose.yml" -f "./src/main/docker/docker-compose-dev.yml" up
+docker-compose -f "./src/main/docker/docker-compose.yml" -f "./src/main/docker/docker-compose.dev.yml" up
 
 **Stop application with database**
 
-docker-compose -f "./src/main/docker/docker-compose.yml" -f "./src/main/docker/docker-compose-dev.yml" down
+docker-compose -f "./src/main/docker/docker-compose.yml" -f "./src/main/docker/docker-compose.dev.yml" down

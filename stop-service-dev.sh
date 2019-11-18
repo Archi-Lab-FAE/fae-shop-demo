@@ -8,7 +8,7 @@ CURRENT="$(
 # start service
 docker-compose -p shop \
   -f "$CURRENT/src/main/docker/docker-compose.yml" \
-  -f "$CURRENT/src/main/docker/docker-compose-dev.yml" \
+  -f "$CURRENT/src/main/docker/docker-compose.dev.yml" \
   down
 
 # Remove network
