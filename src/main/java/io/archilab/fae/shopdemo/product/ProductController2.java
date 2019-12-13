@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.UUID;
 
 @RestController
-public class ProductController {
+public class ProductController2 {
 
   @Autowired
   private ProductRepository productRepository;
