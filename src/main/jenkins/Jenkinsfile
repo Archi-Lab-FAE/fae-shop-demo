@@ -22,7 +22,7 @@ node {
             junit 'target/surefire-reports/*.xml'
         }
 
-        stage('Quality Check') {
+        /*stage('Quality Check') {
             sh 'mvn -B -s settings.xml checkstyle:checkstyle'
             jacoco()
             withSonarQubeEnv('SonarQube-Server') {
@@ -43,7 +43,7 @@ node {
                     }
                 }
             }
-        }
+        }*/
 
         stage('Build Production') {
             withCredentials([usernamePassword(credentialsId: 'archilab-nexus-jenkins',
